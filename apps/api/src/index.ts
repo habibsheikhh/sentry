@@ -1,7 +1,8 @@
 import { Elysia } from "elysia";
 import { checkDatabaseConnection } from "./db";
+import { env } from "./config/env";
 
-const PORT = Number(Bun.env.PORT ?? 3000);
+const PORT = env.PORT;
 
 const app = new Elysia()
   .get("/", () => ({
