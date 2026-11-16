@@ -1,4 +1,3 @@
-
 {
   "name": "api",
   "version": "1.0.0",
@@ -9,6 +8,11 @@
     "start": "bun src/index.ts"
   },
   "dependencies": {
-    "elysia": "^1.4.32"
+    "drizzle-orm": "^0.45.4",
+    "elysia": "^1.4.32",
+    "postgres": "^4.1.1"
+  },
+  "devDependencies": {
+    "drizzle-kit": "^0.31.11"
   }
 }
